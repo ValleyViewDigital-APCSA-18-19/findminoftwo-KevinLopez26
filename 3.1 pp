@@ -1,0 +1,28 @@
+import java.util.*;
+public class swapInt {
+    public static void main(String[] args) 
+    {
+        int num1, num2, holdNum;
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Enter number 1 ");
+        num1 = keyboard.nextInt();
+        
+        System.out.println("Enter number 2 ");
+        num2 = keyboard.nextInt();
+        
+        if (num1 > num2)
+        {
+            holdNum = num2;
+            num2 = num1;
+            num1 = holdNum;
+            System.out.println("Number 1 is now " + num2);
+            System.out.println("Number 2 is now " + num1);
+        }
+        else
+        {
+            System.out.println("Number 1 is still " + num1);
+            System.out.println("Number 2 is still " + num2);
+        }
+    }
+}
